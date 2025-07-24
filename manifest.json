@@ -1,0 +1,23 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_title": "PP All in One Inspector v1"
+   },
+   "content_scripts": [ {
+      "css": [ "css/style.css" ],
+      "js": [ "js/jquery.min.js", "js/alasql.min.js", "js/xlsx.core.min.js","js/script.js", "mark.min.js", "js/html2pdf.bundle.js", "js/json2html.min.js", "js/jspdf.umd.min.js",  "js/jspdf.plugin.autotable.js"],
+      "matches": [ "<all_urls>" ]
+   } ],
+   "description": "Gives a detail info about the page like Pplinking, data-pa-click, broken link and image details and generates full excel",
+   "manifest_version": 2,
+   "name": "PP All in One Inspector v1",
+   "permissions": [ "tabs", "activeTab", "<all_urls>" ],
+   "version": "1.3",
+   "authors": [ {
+      "name": "Suraj Y",
+      "email": "surayadav@paypal.com"
+   } ]
+}
